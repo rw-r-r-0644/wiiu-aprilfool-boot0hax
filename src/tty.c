@@ -251,7 +251,7 @@ void find_buffers()
 
 void put_pixel(int x, int y, u32 color)
 {
-	//Code to write to framebuffer directly. For some reason this is only writing to one of the framebuffers when calling flipBuffers. Should provide speedup but needs investigation.
+	//Code to write to framebuffer directly
 	u32 *screen = BUF_ADDR_1;
 	u32 v = (x + y * 896);
 	// Fixed direct pixel write code from libwiiu, 0x69000 is the offset for gamepad's second buffer :)
