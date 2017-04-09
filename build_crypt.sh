@@ -1,0 +1,1 @@
+gcc crypt_string.c -o crypt
